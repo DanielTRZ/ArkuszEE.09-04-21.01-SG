@@ -34,8 +34,26 @@
    </form>
    
    </div>
-   <div id="glowny"></div>
-   <div id="stopka"></div>
+   <div id="glowny">
+       <table>
+        <tr><th>Ip</th><th>Interpretacja</th><th>zaczyna się od...</th></tr>   
+           <?php
+           
+           
+           
+           
+           
+           
+           
+           
+           ?>
+           
+       </table>
+       
+   </div>
+   <div id="stopka">
+       <p>Autor : 00000000</p><a href="kwerendy.txt">Wynik działania kwerendy 2</a>
+   </div>
     
     
     
