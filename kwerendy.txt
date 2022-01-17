@@ -1,7 +1,7 @@
-kw1  UPDATE `wynik` SET `bmi_id`='1',`data_pomiaru`='2020-05-20',`wynik`='15' WHERE 1;
+kw1  INSERT INTO `wynik`(`bmi_id`, `data_pomiaru`, `wynik`) VALUES ('1','[2020-05-20','15');
 
 kw2  SELECT `id`,`informacja`,`wart_min` FROM `bmi`;
 
-kw3  
+kw3  SELECT `wynik`.`bmi.informacja`FROM `wynik` JOIN `bmi` ON `wynik.bmi_id`=`bmi.id`
 
 kw4 SELECT `wart_min`,`wart_max` FROM `bmi`WHERE `informacja` ='niedowaga';
