@@ -14,21 +14,32 @@
    <h1>Podaj dane</h1>
    <form  action="waga.php" method="post" name="waga" id="waga">
       
-      Waga<input type="number">
-      Wzrost[cm]<input type="number">
+      Waga<input type="number" id="wag" name="wag">
+      Wzrost[cm]<input type="number" id="wzrost" name="wzrost">
       <button type="submit">Licz BMI i zapisz wynik</button>
        
        <?php
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
+         if(isset($_POST['wag']) && isset($_POST['wzrost'])) {
+                    $waga = $_POST['wag'];
+                    $wzrost = $_POST['wzrost'];
+                    $bmi = $waga / ($wzrost * $wzrost);
+                    $bmi *= 10000;
+                    echo "Twoja waga: $wag; Twój wzrost: $wzrost <br> BMI wynosi: $bmi";
+                    $bmi_id = 0;
+                    if($bmi <= 18) $bmi_id = 1;
+                    if($bmi > 19 && $bmi <= 25) $bmi_id = 2;
+                    if($bmi > 26 && $bmi <= 30) $bmi_id = 3;
+                    if($bmi > 31 && $bmi <= 100) $bmi_id = 4;
+
+                    $dataPomiaru = date("Y-m-d");
+
+                    $query = $db->prepare("INSERT INTO wynik (id, bmi_id, data_pomiaru, wynik) 
+                                            VALUES (NULL, ?, ?, ?)");
+                    $query->bind_param("isi", $bmi_id, $dataPomiaru, $bmi);
+                    $query->execute();
+                }
+       mysqli_close($baza);
+      
        ?>
        
    </form>
@@ -39,12 +50,34 @@
         <tr><th>Ip</th><th>Interpretacja</th><th>zaczyna się od...</th></tr>   
            <?php
            
-           
-           
-           
-           
-           
-           
+     $baza=mysqli_connect('localhost','root','','bmi2');
+     if(mysqli_connect_errno())
+     {echo"wystapil blad polaczenia z baza";}
+      $wynik=mysqli_query($baza, 'SELECT `id`,`informacja`,`wart_min` FROM `bmi`');
+      while($r=mysqli_fetch_array($wynik))
+      {
+     echo "<tr>";
+     echo "<td>";
+     echo  $r["id"]  ;
+     echo "</td>"; 
+   
+         
+       
+     echo "<td>";
+     echo $r["informacja"];
+     echo "</td>";   
+     
+          
+     echo "<td>";
+     echo $r["wart_min"];
+     echo "</td>";  
+     echo "</tr>"; 
+
+      }
+      
+   
+      
+       mysqli_close($baza);
            
            ?>
            
@@ -52,7 +85,7 @@
        
    </div>
    <div id="stopka">
-       <p>Autor : 00000000</p><a href="kwerendy.txt">Wynik działania kwerendy 2</a>
+       Autor : 00000000<a href="kwerendy.txt">Wynik działania kwerendy 2</a>
    </div>
     
     
