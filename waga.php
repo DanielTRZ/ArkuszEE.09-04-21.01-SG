@@ -17,12 +17,13 @@
       Waga<input type="number" id="wag" name="wag">
       Wzrost[cm]<input type="number" id="wzrost" name="wzrost">
       <button type="submit">Licz BMI i zapisz wynik</button>
+      <br>
        
        <?php
          if(isset($_POST['wag']) && isset($_POST['wzrost'])) {
-                    $waga = $_POST['wag'];
+                    $wag = $_POST['wag'];
                     $wzrost = $_POST['wzrost'];
-                    $bmi = $waga / ($wzrost * $wzrost);
+                    $bmi = $wag / ($wzrost * $wzrost);
                     $bmi *= 10000;
                     echo "Twoja waga: $wag; Twój wzrost: $wzrost <br> BMI wynosi: $bmi";
                     $bmi_id = 0;
@@ -31,14 +32,8 @@
                     if($bmi > 26 && $bmi <= 30) $bmi_id = 3;
                     if($bmi > 31 && $bmi <= 100) $bmi_id = 4;
 
-                    $dataPomiaru = date("Y-m-d");
-
-                    $query = $db->prepare("INSERT INTO wynik (id, bmi_id, data_pomiaru, wynik) 
-                                            VALUES (NULL, ?, ?, ?)");
-                    $query->bind_param("isi", $bmi_id, $dataPomiaru, $bmi);
-                    $query->execute();
-                }
-       mysqli_close($baza);
+                   
+         }
       
        ?>
        
