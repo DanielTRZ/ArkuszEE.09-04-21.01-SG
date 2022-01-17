@@ -6,3 +6,43 @@
     height: 100px;
     font-size: 150%;
 }
+#logo{
+    width: 25%;
+    height: 100px;
+}
+#lewy{
+    width: 45%;
+    height: 300px;
+}
+#prawy{
+    width: 55%;
+    height: 300px;
+    text-align: center;
+}
+#glowny{
+    background-color: #4B0082;
+    padding: 60px;
+    
+}
+#stopka{
+    background-color: #4B0082;
+    color: white;
+    padding: 40px;
+}
+body{
+    font-family: Helvetica;
+    background-color: #FFE4B5;
+}
+#form{
+    padding: 40px;
+}
+th,td{
+    color: white;
+    text-align: center;
+    width: 90%;
+    border: 1px dashed yellow;
+}
+td:hover{
+    background-color: #9370DB;
+    color: yellow;
+}
