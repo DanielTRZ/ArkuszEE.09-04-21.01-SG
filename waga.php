@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Twój wskaźnik BMI</title>
-    <link rel="stylesheet" href="styl4.css">
-    
+    <link rel="stylesheet" href="styl4.css"> 
 </head>
 <body>
    <div id="baner"><h2>Oblicz wzkaźnik BMI</h2></div>
@@ -69,9 +68,7 @@
      echo "</tr>"; 
 
       }
-      
-   
-      
+     
        mysqli_close($baza);
            
            ?>
