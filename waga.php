@@ -54,9 +54,7 @@
      echo "<td>";
      echo  $r["id"]  ;
      echo "</td>"; 
-   
-         
-       
+          
      echo "<td>";
      echo $r["informacja"];
      echo "</td>";   
@@ -79,11 +77,7 @@
    <div id="stopka">
        Autor : 00000000<a href="kwerendy.txt">Wynik działania kwerendy 2</a>
    </div>
-    
-    
-    
-    
-    
+      
     
 </body>
 </html>
