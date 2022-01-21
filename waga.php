@@ -30,7 +30,6 @@
                     if($bmi > 19 && $bmi <= 25) $bmi_id = 2;
                     if($bmi > 26 && $bmi <= 30) $bmi_id = 3;
                     if($bmi > 31 && $bmi <= 100) $bmi_id = 4;
-
                    
          }
       
