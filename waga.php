@@ -29,8 +29,7 @@
                     if($bmi <= 18) $bmi_id = 1;
                     if($bmi > 19 && $bmi <= 25) $bmi_id = 2;
                     if($bmi > 26 && $bmi <= 30) $bmi_id = 3;
-                    if($bmi > 31 && $bmi <= 100) $bmi_id = 4;
-                   
+                    if($bmi > 31 && $bmi <= 100) $bmi_id = 4;               
          }
       
        ?>
@@ -57,15 +56,13 @@
      echo "<td>";
      echo $r["informacja"];
      echo "</td>";   
-     
-          
+             
      echo "<td>";
      echo $r["wart_min"];
      echo "</td>";  
      echo "</tr>"; 
 
-      }
-     
+      }  
        mysqli_close($baza);
            
            ?>
