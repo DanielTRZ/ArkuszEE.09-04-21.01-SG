@@ -10,8 +10,7 @@
 #logo{
     width: 25%;
     height: 100px;
-    float: left;
-    
+    float: left;    
 }
 #lewy{
     width: 45%;
@@ -27,8 +26,7 @@
 #glowny{
     background-color: #4B0082;
     padding: 60px;
-    clear: both;
-    
+    clear: both;    
 }
 #stopka{
     background-color: #4B0082;
@@ -48,15 +46,10 @@ table{
     width: 90%;
     border: 1px dashed yellow;
 }
-
-    
-
 td:hover{
     background-color: #9370DB;
     color: yellow;
 }
-
-
 tr:hover{
     background-color: #9370DB;
     color: yellow;
