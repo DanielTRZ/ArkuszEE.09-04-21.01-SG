@@ -16,7 +16,7 @@
 Waga<input type="number" id="wag" name="wag">
 Wzrost[cm]<input type="number" id="wzrost" name="wzrost">
 <button type="submit">Licz BMI i zapisz wynik</button>
-      <br>
+<br>
        
 <?php
          if(isset($_POST['wag']) && isset($_POST['wzrost'])) {
