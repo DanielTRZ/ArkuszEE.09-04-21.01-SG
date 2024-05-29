@@ -24,7 +24,7 @@ $wag = $_POST['wag'];
 $wzrost = $_POST['wzrost'];
 $bmi = $wag / ($wzrost * $wzrost);
 $bmi *= 10000;
-                    echo "Twoja waga: $wag; Twój wzrost: $wzrost <br> BMI wynosi: $bmi";
+echo "Twoja waga: $wag; Twój wzrost: $wzrost <br> BMI wynosi: $bmi";
                     $bmi_id = 0;
                     if($bmi <= 18) $bmi_id = 1;
                     if($bmi > 19 && $bmi <= 25) $bmi_id = 2;
