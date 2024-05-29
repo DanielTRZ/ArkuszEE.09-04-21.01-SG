@@ -39,7 +39,7 @@
 <div id="glowny">
 <table>
 <tr><th>Ip</th><th>Interpretacja</th><th>zaczyna się od...</th></tr>   
-           <?php
+<?php
            
      $baza=mysqli_connect('localhost','root','','bmi2');
      if(mysqli_connect_errno())
