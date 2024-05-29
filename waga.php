@@ -11,7 +11,7 @@
 <div id="lewy"><img src="rys1.png" alt="zrzuć kalorie!"></div>
 <div id="prawy">
 <h1>Podaj dane</h1>
-   <form  action="waga.php" method="post" name="waga" id="waga">
+<form  action="waga.php" method="post" name="waga" id="waga">
       
       Waga<input type="number" id="wag" name="wag">
       Wzrost[cm]<input type="number" id="wzrost" name="wzrost">
