@@ -27,7 +27,7 @@ $bmi *= 10000;
 echo "Twoja waga: $wag; Twój wzrost: $wzrost <br> BMI wynosi: $bmi";
 $bmi_id = 0;
 if($bmi <= 18) $bmi_id = 1;
-                    if($bmi > 19 && $bmi <= 25) $bmi_id = 2;
+if($bmi > 19 && $bmi <= 25) $bmi_id = 2;
                     if($bmi > 26 && $bmi <= 30) $bmi_id = 3;
                     if($bmi > 31 && $bmi <= 100) $bmi_id = 4;               
          }
