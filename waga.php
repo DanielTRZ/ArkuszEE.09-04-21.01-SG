@@ -34,7 +34,7 @@
       
 ?>
        
-   </form>
+</form>
    
    </div>
    <div id="glowny">
