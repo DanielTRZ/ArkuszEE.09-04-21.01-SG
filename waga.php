@@ -14,7 +14,7 @@
 <form  action="waga.php" method="post" name="waga" id="waga">
       
 Waga<input type="number" id="wag" name="wag">
-      Wzrost[cm]<input type="number" id="wzrost" name="wzrost">
+Wzrost[cm]<input type="number" id="wzrost" name="wzrost">
       <button type="submit">Licz BMI i zapisz wynik</button>
       <br>
        
