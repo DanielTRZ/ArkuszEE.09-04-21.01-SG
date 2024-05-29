@@ -22,7 +22,7 @@ Wzrost[cm]<input type="number" id="wzrost" name="wzrost">
 if(isset($_POST['wag']) && isset($_POST['wzrost'])) {
 $wag = $_POST['wag'];
 $wzrost = $_POST['wzrost'];
-                    $bmi = $wag / ($wzrost * $wzrost);
+$bmi = $wag / ($wzrost * $wzrost);
                     $bmi *= 10000;
                     echo "Twoja waga: $wag; Twój wzrost: $wzrost <br> BMI wynosi: $bmi";
                     $bmi_id = 0;
