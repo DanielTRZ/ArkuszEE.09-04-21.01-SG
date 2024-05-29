@@ -37,7 +37,7 @@
 </form>
 </div>
 <div id="glowny">
-       <table>
+<table>
         <tr><th>Ip</th><th>Interpretacja</th><th>zaczyna się od...</th></tr>   
            <?php
            
