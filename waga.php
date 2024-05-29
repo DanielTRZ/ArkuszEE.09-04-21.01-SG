@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="styl4.css"> 
 </head>
 <body>
-   <div id="baner"><h2>Oblicz wzkaźnik BMI</h2></div>
+<div id="baner"><h2>Oblicz wzkaźnik BMI</h2></div>
    <div id="logo"><img src="wzor.png" alt="liczymy BMI"></div>
    <div id="lewy"><img src="rys1.png" alt="zrzuć kalorie!"></div>
    <div id="prawy">
