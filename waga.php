@@ -9,7 +9,7 @@
 <div id="baner"><h2>Oblicz wzkaźnik BMI</h2></div>
 <div id="logo"><img src="wzor.png" alt="liczymy BMI"></div>
 <div id="lewy"><img src="rys1.png" alt="zrzuć kalorie!"></div>
-   <div id="prawy">
+<div id="prawy">
    <h1>Podaj dane</h1>
    <form  action="waga.php" method="post" name="waga" id="waga">
       
