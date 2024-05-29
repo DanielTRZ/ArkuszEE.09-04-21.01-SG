@@ -18,7 +18,7 @@
       <button type="submit">Licz BMI i zapisz wynik</button>
       <br>
        
-       <?php
+<?php
          if(isset($_POST['wag']) && isset($_POST['wzrost'])) {
                     $wag = $_POST['wag'];
                     $wzrost = $_POST['wzrost'];
