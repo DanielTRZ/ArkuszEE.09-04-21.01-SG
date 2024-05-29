@@ -20,7 +20,7 @@
        
 <?php
          if(isset($_POST['wag']) && isset($_POST['wzrost'])) {
-                    $wag = $_POST['wag'];
+         $wag = $_POST['wag'];
                     $wzrost = $_POST['wzrost'];
                     $bmi = $wag / ($wzrost * $wzrost);
                     $bmi *= 10000;
