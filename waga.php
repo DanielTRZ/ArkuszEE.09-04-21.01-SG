@@ -15,7 +15,7 @@
       
 Waga<input type="number" id="wag" name="wag">
 Wzrost[cm]<input type="number" id="wzrost" name="wzrost">
-      <button type="submit">Licz BMI i zapisz wynik</button>
+<button type="submit">Licz BMI i zapisz wynik</button>
       <br>
        
 <?php
