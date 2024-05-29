@@ -38,7 +38,7 @@
 </div>
 <div id="glowny">
 <table>
-        <tr><th>Ip</th><th>Interpretacja</th><th>zaczyna się od...</th></tr>   
+<tr><th>Ip</th><th>Interpretacja</th><th>zaczyna się od...</th></tr>   
            <?php
            
      $baza=mysqli_connect('localhost','root','','bmi2');
