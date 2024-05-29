@@ -35,8 +35,7 @@
 ?>
        
 </form>
-   
-   </div>
+</div>
    <div id="glowny">
        <table>
         <tr><th>Ip</th><th>Interpretacja</th><th>zaczyna się od...</th></tr>   
