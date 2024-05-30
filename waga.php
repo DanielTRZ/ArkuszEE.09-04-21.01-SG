@@ -66,7 +66,7 @@ if($bmi > 31 && $bmi <= 100) $bmi_id = 4;
            
            ?>
            
-       </table>
+</table>
        
    </div>
     
