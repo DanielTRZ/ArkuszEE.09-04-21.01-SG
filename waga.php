@@ -62,7 +62,7 @@ if($bmi > 31 && $bmi <= 100) $bmi_id = 4;
      echo "</tr>"; 
 
       }  
-       mysqli_close($baza);
+      mysqli_close($baza);
            
 ?>
            
