@@ -68,8 +68,7 @@ if($bmi > 31 && $bmi <= 100) $bmi_id = 4;
            
 </table>
 </div>
-    
-   <div id="stopka">
+<div id="stopka">
        Autor : 00000000<a href="kwerendy.txt">Wynik działania kwerendy 2</a>
    </div>      
     
