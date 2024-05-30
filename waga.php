@@ -64,7 +64,7 @@ if($bmi > 31 && $bmi <= 100) $bmi_id = 4;
       }  
        mysqli_close($baza);
            
-           ?>
+?>
            
 </table>
        
